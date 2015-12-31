@@ -31,7 +31,7 @@ if (!isset($_COOKIE["reader_id"])){
 }
 
 // On se connecte à la base de données
-$bdd = new PDO('mysql:host='+$db_host+';dbname='+$db_name, $db_user, $db_pass, array(
+$bdd = new PDO('mysql:host='.$db_host.';dbname='.$db_name, $db_user, $db_pass, array(
     PDO::ATTR_PERSISTENT => true
 ));
 

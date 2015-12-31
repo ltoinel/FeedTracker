@@ -12,7 +12,7 @@
 require_once("conf.php");
 
 // Connexion à la base de données.
-$bdd = new PDO('mysql:host='+$db_host+';dbname='+$db_name, $db_user, $db_pass, array(
+$bdd = new PDO('mysql:host='.$db_host.';dbname='.$db_name, $db_user, $db_pass, array(
     PDO::ATTR_PERSISTENT => true
 ));
 
