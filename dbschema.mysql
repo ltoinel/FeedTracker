@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS `stats` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `reader_id` varchar(16) NOT NULL,
+  `content_id` int(10) unsigned NOT NULL,
+  `read_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `ip` varchar(16) NOT NULL,
+  `referer` varchar(128) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `reader_id` (`reader_id`,`content_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
