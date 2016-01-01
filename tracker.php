@@ -45,6 +45,6 @@ $req->execute(array(
         ));
 
 // On redirige le navigateur avec une image transparente ou un logo
-header("HTTP/1.1 301 Moved Permanently");
+header("Status: 302 Moved Temporarily", false, 302);
 header('location: '.$image_url);
 header("Connection: close");
